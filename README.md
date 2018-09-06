@@ -1,4 +1,4 @@
-# ModelChimp: Scikit Example
+# ModelChimp: Tensorflow Example
 
 This repository contains example code of using ModelChimp with tensorflow Framework
 
