@@ -90,7 +90,7 @@ def main(_):
   correct_prediction = tf.equal(tf.argmax(y_conv, 1), tf.argmax(y_, 1))
   accuracy = tf.reduce_mean(tf.cast(correct_prediction, tf.float32))
 
-  tracker = Tracker('<PROJECT KEY>', host='demo.modelchimp.com', experiment_name='MNIST Classification') #MODELCHIMP
+  tracker = Tracker('<PROJECT KEY>', host='localhost:8000', experiment_name='MNIST Classification') #MODELCHIMP
   tracker.add_multiple_params(param) #MODELCHIMP
 
   with tf.Session() as sess:
